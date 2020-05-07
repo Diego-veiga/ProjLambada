@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 
 namespace ProjLambada.Models
 {
-    public class Email
+    public class TecnicoLambada
     {
-        public int Id { get; set; }
-        public string email { get; set; }
         public int TecnicoId { get; set; }
+        public virtual Tecnico Tecnico { get; set; }
 
-        public  virtual Tecnico Tecnico { get; set; }
+
+
+        public int LamabdaId { get; set; }
+        public virtual Lambada Lambada { get; set; }
     }
 }

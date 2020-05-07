@@ -10,6 +10,7 @@ namespace ProjLambada.Models
         public int Id { get; set; }
         public string Descricao { get; set; }
         public DateTime DataLambada { get; set; }
+        public virtual IEnumerable<TecnicoLambada> TecnicoLambadas { get; set; }
 
     }
 }

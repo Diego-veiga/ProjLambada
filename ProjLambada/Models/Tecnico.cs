@@ -11,5 +11,7 @@ namespace ProjLambada.Models
         public string Nome { get; set; }
         public string CPF { get; set; }
         public DateTime DataDeNascimento { get; set; }
+        public IEnumerable<Email> Emails { get; set; }
+        public virtual IEnumerable<TecnicoLambada> TecnicoLambadas { get; set; }
     }
 }
